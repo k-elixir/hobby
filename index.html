@@ -59,6 +59,9 @@
       #footer-border {
         border: solid silver;
       }
+      .hog {
+        font-size: 40px;
+      }
       .title {
         font-size: 55px;
         animation-name: fade;
@@ -252,6 +255,10 @@
         .hogwarts-founders img {
           width: 250px;
         }
+        #about img,
+        #death iframe {
+          width: 300px !important;
+        }
       }
       @media (min-width: 421px) and (max-width: 570px) {
         .hogwarts-founders img {
@@ -268,10 +275,18 @@
           width: 480px;
         }
       }
-
       @media (max-width: 500px) {
         #contact .forms {
           padding: 18px;
+        }
+        #about img,
+        #death iframe {
+          width: 350px !important;
+        }
+      }
+      @media (max-width: 576px) {
+        .contact-form {
+          width: 100% !important;
         }
       }
       @media (max-width: 700px) {
@@ -279,9 +294,15 @@
           max-width: 300px !important;
         }
       }
+      @media (max-width: 767px) {
+        .contact-form {
+          padding: 10px !important;
+          width: 100%;
+        }
+      }
       @media (max-width: 991px) {
         #death iframe {
-          width: 400px !important;
+          width: 400px;
         }
         div .icon-col-2 {
           display: block;
@@ -292,7 +313,7 @@
         }
         #contact input,
         #contact textarea {
-          width: 100%;
+          width: 100% !important;
         }
         .icones-col {
           display: none;
@@ -307,9 +328,6 @@
         }
       }
       @media (min-width: 1200px) and (max-width: 1399px) {
-        .about-page-img {
-          width: 500px;
-        }
         .icones-col {
           padding: 50px;
           right: 30px;
@@ -327,14 +345,6 @@
         .icones-col {
           padding: 50px;
           right: 50px !important;
-        }
-      }
-      @media (min-width: 1400px) {
-        .about-page-img {
-          width: 576px;
-        }
-        .about-page .about {
-          margin-top: 30px;
         }
       }
     </style>
@@ -370,48 +380,19 @@
                 <a class="nav-link" aria-current="page" href="/"> Home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#About">
+                <a class="nav-link" aria-current="page" href="#about">
                   About
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Contact">
+                <a class="nav-link" aria-current="page" href="#contact">
                   Contact
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Gallery">
-                  Gallery
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#Hogwarts">
                   Hogwarts
                 </a>
-              </li>
-              <li class="dropdown-item dropdown">
-                <div
-                  role="button"
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Houses
-                </div>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li>
-                    <a class="dropdown-item" href="#Gryffindor"> Gryffindor </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#Hufflepuff"> Hufflepuff </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#Ravenclaw"> Ravenclaw </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#Slytherin"> Slytherin </a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -433,10 +414,6 @@
         <br />
         If you know this world you're my friend and nice to meet you, you can
         have fun and find a lot of funny stuff here. <br />
-        Let me a little explane my site for you: <br />
-        you can go to the Hogwarts by train in the nav, see the all group halls
-        and histories, maybe find some wallpapers for your phone in gallery, and
-        laugh to the memes. <br />
         but if you don't know anything about this world I'm sorry, I have to
         call you a Muggle :( , don't worry you can learn, and this site is the
         easiest way for you to learn. <br />
@@ -507,7 +484,7 @@
                 />
               </a>
             </div>
-            <div class="col mt-3 pe-4 ps-4 p-xl-0">
+            <div class="col mt-3 p-xl-0">
               <h4>Diagon Alley</h4>
               <p>Befor going to Hogwarts, we need to do some shopping!</p>
             </div>
@@ -518,36 +495,28 @@
     <div class="homePage-thirdPart text-center p-sm-5">
       <div class="row justify-content-center">
         <div class="col-auto">
-          <a href="#Gryffindor">
-            <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/051/original/wall1.f926bb52dfe1b31e4076.jpg?1688404653"
-              alt="Gryffindor"
-            />
-          </a>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/051/original/wall1.f926bb52dfe1b31e4076.jpg?1688404653"
+            alt="Gryffindor"
+          />
         </div>
         <div class="col-auto">
-          <a href="#Hufflepuff">
-            <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/053/original/wall3.5b691cc182738b961173.jpg?1688404667"
-              alt="Huffenpuff"
-            />
-          </a>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/053/original/wall3.5b691cc182738b961173.jpg?1688404667"
+            alt="Huffenpuff"
+          />
         </div>
         <div class="col-auto">
-          <a href="#Ravenclaw">
-            <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/052/original/wall2.3a09f2107591d82cd93b.jpg?1688404661"
-              alt="Ravenclaw"
-            />
-          </a>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/052/original/wall2.3a09f2107591d82cd93b.jpg?1688404661"
+            alt="Ravenclaw"
+          />
         </div>
         <div class="col-auto">
-          <a href="#Slytherin">
-            <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/054/original/wall4.1fab6fd0e4de02e5f39c.jpg?1688404680"
-              alt="Slytherin"
-            />
-          </a>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/054/original/wall4.1fab6fd0e4de02e5f39c.jpg?1688404680"
+            alt="Slytherin"
+          />
         </div>
       </div>
     </div>
@@ -559,12 +528,12 @@
       <span>Harry Potter</span>
     </div>
 
-    <div id="Hogwarts" class="m-5">
-      <div class="pb-5" id="hogwarts-bg">
+    <div id="Hogwarts">
+      <div class="pb-5 m-1 m-md-5" id="hogwarts-bg">
         <div class="p-5 mb-5 text-center">
           <div class="container pt-5 mt-4 pb-5 mb-5">
             <hr />
-            <h1 class="title p-md-5">Hogwarts</h1>
+            <h1 class="title hog p-md-5">Hogwarts</h1>
             <p>School of Witchcraft and Wizardry</p>
             <hr />
           </div>
@@ -767,7 +736,7 @@
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-                class="ms-3 float-sm-end"
+                class="ms-sm-3 float-sm-end"
               ></iframe>
             </div>
             <p>
@@ -857,20 +826,17 @@
       </main>
     </div>
 
-    <div
-      class="container pt-5 pb-5 m-lg-5 text-center text-lg-start"
-      id="about"
-    >
+    <div class="container pt-5 pb-5 m-xl-5 text-center" id="about">
       <div class="row">
-        <div class="col-lg mt-5 pt-3 pt-xl-0 mt-xl-1">
+        <div class="col-xl mt-5 pt-3 pt-xl-0 mt-xl-1 text-center">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/225/original/picture.0e71b8ef71ba5495cfd3.png?1688484915"
             alt="my Avatar"
           />
         </div>
-        <div class="col-lg-6 pt-xl-2 about">
+        <div class="col-xl pt-xl-2 about">
           <hr />
-          <p class="pt-3 fs-5 text-start">
+          <p class="pt-3 pt-xl-5 fs-5 text-start">
             <span class="h1">Hello!</span>
             My name is Kimia and welcome to my Harry Potter website.
             <br />
@@ -878,12 +844,11 @@
             that for some reason :), my patronus is a black bear, you might be
             interested that my wand has phoenix core.
             <br />
-            I wrote this website for my Shecodes challenge which was about "what
-            is your favorite movie" (but actually I think I cheated becuas I
-            wrote my program about a series not single movie ;)). you can find
-            all about Harry Potter series here. If I forgot something I'm really
-            glad if you tell me by clicking on the button below and share with
-            me I want to know what is your group and patronus.
+            I wrote this website for my Shecodes challenge which was about
+            "Hobby" and my hobby is watching Harry Potter ;). you can find all
+            about Harry Potter series here. If I forgot something I'm really
+            glad if you tell me by fill out the form below and share with me I
+            want to know what is your group and patronus.
             <br />I hope you enjoy it.
           </p>
           <hr />
@@ -892,7 +857,7 @@
     </div>
 
     <div class="container" id="contact">
-      <div class="forms ms-xl-5">
+      <div class="forms contact-form ms-xl-5">
         <h3 class="pb-5 title-contact">Get in Touch</h3>
         <form action="https://formspree.io/f/xknaqqvk" method="POST">
           <div>
