@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Landing Page</title>
+    <style>
+        /* CSS styles */
+    </style>
+    <script>
+        function showAlert() {
+            alert('Button clicked!');
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to Your Landing Page</h1>
+    <p>This is a sample landing page.</p>
+    <button onclick="showAlert()">Click Here</button>
+</body>
+</html>
